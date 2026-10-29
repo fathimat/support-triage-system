@@ -1,0 +1,42 @@
+
+# React / Node.js
+**/node_modules/
+**/dist/
+**/.vite/
+**/coverage/
+
+# Java / Spring Boot / Gradle
+**/build/
+**/.gradle/
+**/out/
+*.class
+*.jar
+*.war
+
+# IDE files
+**/.idea/
+**/.vscode/
+*.iml
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+**/application-secrets.properties
+**/application-secrets.yml
+**/application-secrets.yaml
+
+# Temporary files
+*.tmp
+*.bak
