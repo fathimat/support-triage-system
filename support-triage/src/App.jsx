@@ -57,7 +57,6 @@ function classifyTicket(title, description) {
 }
 
 function App() {
-  // const [loading, setLoading] = useState(true)
 
   const [tickets, setTickets] = useState(() => {
     try {
@@ -80,7 +79,6 @@ function App() {
   const [filter, setFilter] = useState('All')
   const [priorityFilter, setPriorityFilter] = useState('All')
   const [categoryFilter, setCategoryFilter] = useState('All')
-  // const [sortBy, setSortBy] = useState('Newest')
   const [sortBy, setSortBy] = useState('Default')
   const [selectedTicket, setSelectedTicket] = useState(null)
   const [editingTicket, setEditingTicket] = useState(null)
@@ -110,38 +108,6 @@ function App() {
   useEffect(() => {
     loadTickets()
   }, [])
-
-  //   //  Local Storage of Tickets - Comments
-  //   useEffect(() => {
-  //     localStorage.setItem('support-triage-tickets', JSON.stringify(tickets))
-  // }, [tickets])
-
-  // useEffect(() => {
-  //   fetch('http://localhost:8080/api/tickets')
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw new Error('Failed to load tickets')
-  //       }
-  //       return response.json()
-  //     })
-  //     .then((data) => {
-  //       setTickets(
-  //         data.map((ticket) => ({
-  //           ...ticket,
-  //           description:
-  //             ticket.description || 'No description provided.',
-  //         }))
-  //       )
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error loading tickets:', error)
-  //     })
-  //     .finally(() => {
-  //       setLoading(false)
-  //     })
-  // }, [])
-
-
 
   async function createTicket(event) {
     event.preventDefault()
@@ -299,20 +265,6 @@ function App() {
       alert('Unable to update ticket. Please try again.')
     }
   }
-
-  // const visibleTickets = tickets.filter((ticket) => {
-  //   const matchesSearch =
-  //     `${ticket.title} ${ticket.description} ${ticket.category}`
-  //       .toLowerCase()
-  //       .includes(search.toLowerCase())
-
-  //   const matchesFilter = filter === 'All' || ticket.status === filter
-
-  //   const matchesPriority =
-  //     priorityFilter === 'All' || ticket.priority === priorityFilter
-
-  //   return matchesSearch && matchesFilter && matchesPriority
-  // })
 
   const priorityOrder = {
     Critical: 4,

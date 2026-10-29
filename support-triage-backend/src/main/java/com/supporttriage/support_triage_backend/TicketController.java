@@ -31,24 +31,6 @@ public class TicketController {
         return ticketRepository.findAll();
     }
 
-//     @PostMapping("/api/tickets/import")
-// @Transactional
-// public List<Ticket> importTickets(@RequestBody List<Ticket> tickets) {
-//     if (ticketRepository.count() > 0) {
-//         throw new RuntimeException(
-//             "Import stopped: the tickets table is not empty."
-//         );
-//     }
-//     for (Ticket ticket : tickets) {
-//         if (ticket.getId() == null) {
-//             throw new RuntimeException(
-//                 "Import stopped: every ticket must have an ID."
-//             );
-//         }
-//         ticketRepository.save(ticket);
-//     }
-//     return ticketRepository.findAll();
-// }
     @PostMapping("/api/tickets/import")
     public List<Ticket> importTickets(@RequestBody List<Ticket> tickets) {
         if (ticketRepository.count() > 0) {
