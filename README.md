@@ -379,3 +379,43 @@ https://github.com/fathimat/support-triage-system
 ## Author
  
 Developed as a full-stack Java and React portfolio project demonstrating REST API development, database integration, troubleshooting workflows, and support ticket management.
+
+
+
+## Live Demo
+
+**Application:** https://support-triage-frontend.onrender.com
+
+**Backend API:** https://support-triage-system.onrender.com/api/tickets
+
+### Project Overview
+
+Support Triage System is a full-stack ticket management
+application built using React, Java Spring Boot, and
+PostgreSQL.
+
+The application allows users to create, view, edit,
+search, filter, and delete support tickets.
+
+It uses rule-based classification to categorize tickets
+and assign priorities based on issue descriptions.
+
+### Technology Stack
+
+- Frontend: React, Vite
+- Backend: Java 21, Spring Boot, REST APIs
+- Database: PostgreSQL (Neon)
+- Deployment: Render
+- Version Control: GitHub
+
+### Verified Features
+
+- Create, view, update, and delete tickets
+- Ticket status management
+- Rule-based category and priority classification
+- Dashboard statistics
+- PostgreSQL data persistence
+- Cloud-hosted frontend and backend
+
+**Note:** The free backend may take some time to
+respond after inactivity.
