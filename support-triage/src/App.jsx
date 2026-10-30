@@ -329,7 +329,7 @@ function App() {
             <p>Intelligent ticket management</p>
           </div>
         </div>
-        <span className="local-badge">● Local demo</span>
+        <span className="local-badge">● Live demo</span>
       </header>
 
       <section className="welcome">
