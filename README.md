@@ -377,5 +377,5 @@ Screenshot coming soon.
 https://github.com/fathimat/support-triage-system
 
 ## Author
-
+ 
 Developed as a full-stack Java and React portfolio project demonstrating REST API development, database integration, troubleshooting workflows, and support ticket management.
