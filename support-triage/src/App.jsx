@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+
 const initialTickets = [
   {
     id: 1001,
@@ -87,7 +90,7 @@ function App() {
     setLoadingTickets(true)
     setDatabaseError('')
 
-    fetch('http://localhost:8080/api/tickets')
+    fetch('${API_BASE_URL}/api/tickets')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not load tickets from the database')
@@ -133,7 +136,7 @@ function App() {
     setSavingTicket(true)
 
     try {
-      const response = await fetch('http://localhost:8080/api/tickets', {
+      const response = await fetch('${API_BASE_URL}/api/tickets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -176,7 +179,7 @@ function App() {
     const updatedTicket = { ...ticket, status }
 
     try {
-      const response = await fetch(`http://localhost:8080/api/tickets/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/api/tickets/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -209,7 +212,7 @@ function App() {
     if (!confirmDelete) return
 
     try {
-      const response = await fetch(`http://localhost:8080/api/tickets/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/api/tickets/${id}`, {
         method: 'DELETE',
       })
 
@@ -238,7 +241,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/tickets/${editingTicket.id}`,
+        `${API_BASE_URL}/api/tickets/${editingTicket.id}`,
         {
           method: 'PUT',
           headers: {
