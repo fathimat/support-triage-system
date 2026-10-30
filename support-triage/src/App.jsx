@@ -510,7 +510,16 @@ function App() {
           </div>
 
           {loadingTickets ? (
-            <p>Loading tickets...</p>
+            <div className="empty" role="status" aria-live="polite">
+              <h3>Starting Support Triage Demo...</h3>
+              <p>
+                Our free demo server is waking up.
+                This may take around a minute.
+              </p>
+              <p>
+                Please wait. Your tickets will load automatically.
+              </p>
+            </div>
           ) : databaseError ? (
             <div className="empty">
               <p>
