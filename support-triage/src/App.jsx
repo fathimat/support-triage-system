@@ -90,7 +90,7 @@ function App() {
     setLoadingTickets(true)
     setDatabaseError('')
 
-    fetch('${API_BASE_URL}/api/tickets')
+    fetch(`${API_BASE_URL}/api/tickets`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not load tickets from the database')
@@ -136,7 +136,7 @@ function App() {
     setSavingTicket(true)
 
     try {
-      const response = await fetch('${API_BASE_URL}/api/tickets', {
+      const response = await fetch(`${API_BASE_URL}/api/tickets`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
