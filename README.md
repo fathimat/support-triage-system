@@ -419,3 +419,54 @@ and assign priorities based on issue descriptions.
 
 **Note:** The free backend may take some time to
 respond after inactivity.
+
+
+## Application Screenshots
+
+The following screenshots demonstrate the main features of the
+Support Triage System, including ticket management, classification,
+dashboard statistics, and search functionality.
+
+### 1. Ticket Dashboard
+
+Overview of ticket statistics, including total tickets,
+open tickets, critical tickets, in-progress tickets,
+and resolved tickets.
+
+![Support Triage Dashboard](screenshots/01-dashboard.png)
+
+### 2. Support Ticket List
+
+View support tickets with their assigned priorities,
+categories, statuses, and available actions.
+
+![Support Ticket List](screenshots/02-ticket-list.png)
+
+### 3. Create a Support Ticket
+
+Create a new support ticket by entering a title and
+issue description. The application uses predefined
+rules to classify the ticket.
+
+![Create Support Ticket](screenshots/03-create-ticket.png)
+
+### 4. Search and Filter Tickets
+
+Search tickets and filter them by status, priority,
+or category. Sort tickets using the available options.
+
+![Search and Filter Tickets](screenshots/04-search-filters.png)
+
+### 5. View Ticket Details
+
+View complete ticket information, including title,
+description, category, priority, and current status.
+
+![Ticket Details](screenshots/05-ticket-details.png)
+
+### 6. Edit a Support Ticket
+
+Update ticket information, priority, and category
+using the Edit Ticket form.
+
+![Edit Support Ticket](screenshots/06-edit-ticket.png)
